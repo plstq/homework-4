@@ -1,0 +1,18 @@
+-- create
+CREATE TABLE students_info (
+  empId INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  age TEXT NOT NULL,
+  adress TEXT NOT NULL
+);
+
+-- insert
+INSERT INTO students_info VALUES (0001, 'ivan', '18', 'Moscow');
+INSERT INTO students_info VALUES (0002, 'petr', '22', 'Saint-Petersburg');
+INSERT INTO students_info VALUES (0003, 'Anna', '21', 'Saint-Petersburg');
+INSERT INTO students_info VALUES (0004, 'july', '20', 'Rostov-on-Don');
+INSERT INTO students_info VALUES (0005, 'nikolai', '20', 'Moscow');
+
+
+-- fetch 
+SELECT * FROM students_info WHERE adress = 'Moscow';
